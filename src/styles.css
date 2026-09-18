@@ -64,7 +64,8 @@
   --color-ink: var(--ink);
   --color-brand: var(--brand);
   --color-brand-soft: var(--brand-soft);
-  --color-accent: var(--accent);
+  --color-mint: var(--mint);
+
   --color-mist: var(--mist);
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
@@ -72,12 +73,12 @@
 
 
 :root {
-  --radius: 0.625rem;
+  --radius: 1rem;
   --ink: oklch(0.212 0.045 264.6);
   --brand: oklch(0.615 0.196 269.5);
   --brand-soft: oklch(0.678 0.152 269.5);
-  --accent-color-unused: 0;
-  --accent: oklch(0.876 0.093 179.6);
+  --mint: oklch(0.876 0.093 179.6);
+
   --mist: oklch(0.955 0.013 264.6);
   --background: oklch(1 0 0);
   --foreground: var(--ink);
