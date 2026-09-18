@@ -1,20 +1,7 @@
 # 🧠 AI Workplace Productivity Assistant
 
 **A modern, AI-powered dashboard that helps professionals automate everyday workplace tasks.**
-
 ---
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [Responsible AI](#-responsible-ai-disclaimer)
-- [Author](#-author)
-
----
-
 ## 📖 Overview
 
 **AI Workplace Productivity Assistant** is a responsive, SaaS-style web application that helps professionals automate common workplace tasks using AI. It brings together an email generator, a meeting notes summarizer, and an AI chatbot in one clean, easy-to-navigate dashboard.
