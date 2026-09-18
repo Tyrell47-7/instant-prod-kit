@@ -53,9 +53,10 @@ export const generateEmail = createServerFn({ method: "POST" })
     const match = output.match(/SUBJECT:\s*(.*?)\s*(?:\n+BODY:\s*)([\s\S]*)$/i);
 
     return {
-      subject: match ? match[1].trim() : "Draft email",
-      body: match ? match[2].trim() : output,
+      subject: match?.[1]?.trim() || "Draft email",
+      body: match?.[2]?.trim() || output,
     };
+
   });
 
 export const summarizeNotes = createServerFn({ method: "POST" })
@@ -85,7 +86,7 @@ export const summarizeNotes = createServerFn({ method: "POST" })
         ? new RegExp(`${label}:\\s*([\\s\\S]*?)\\n\\s*${next}:`, "i")
         : new RegExp(`${label}:\\s*([\\s\\S]*)$`, "i");
       const found = output.match(pattern);
-      return found ? found[1].trim() : "";
+      return found?.[1]?.trim() ?? "";
     };
 
     const summary = section("SUMMARY", "ACTION ITEMS");
